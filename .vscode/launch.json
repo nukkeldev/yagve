@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "type": "cppvsdbg",
+            "request": "launch",
+            "name": "cargo run -p yagvx",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}\\target\\debug\\yagvx.exe",
+            "environment": [
+                {
+                    "name": "RUST_BACKTRACE",
+                    "value": "short"
+                },
+                {
+                    "name": "RUSTC_TOOLCHAIN",
+                    "value": "C:\\Users\\ethan\\.rustup\\toolchains\\nightly-x86_64-pc-windows-msvc"
+                }
+            ],
+            "args": [],
+            "sourceFileMap": {},
+            "osx": {
+                "MIMode": "lldb"
+            }
+        }
+    ]
+}
