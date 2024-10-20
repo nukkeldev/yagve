@@ -5,7 +5,7 @@ use pollster::FutureExt as _;
 
 use wgpu::include_wgsl;
 use winit::window::WindowAttributes;
-use yagvx::error::*;
+use yagve::error::*;
 
 const VERSION: &str = env!("CARGO_PKG_VERSION");
 const SHADERS: &[&str] = &["shader"];
@@ -260,7 +260,7 @@ impl<'a> winit::application::ApplicationHandler for Engine<'a> {
 
 fn main() -> Result<(), RootError> {
     pretty_env_logger::init_timed();
-    info!("YAGVX v{VERSION}");
+    info!("YAGVE v{VERSION}");
 
     let event_loop = winit::event_loop::EventLoop::new()?;
     let mut engine = Engine::new(WindowAttributes::default().with_title("YAGVX"))

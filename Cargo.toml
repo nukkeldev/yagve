@@ -1,5 +1,5 @@
 [package]
-name = "yagvx"
+name = "yagve"
 description = "Yet Another Generic Voxel Engine"
 authors = ["nukkeldev"]
 version = "0.1.0"
@@ -8,9 +8,11 @@ edition = "2021"
 [dependencies]
 # Logging
 log = "0.4.22"
-pollster = "0.3.0"
 pretty_env_logger = "0.5.0"
+
 # Graphics
 wgpu = "22.1.0"
-# Windowing
 winit = "0.30.5"
+
+# Async
+pollster = "0.3.0"
